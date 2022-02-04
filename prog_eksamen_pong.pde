@@ -15,7 +15,7 @@ void setup(){
   bottom = new Paddle();
   top = new Paddle();
   top.Y = 0;
-  size(500,500);
+  size(700,500);
 }
 
 //buttons working for both players
@@ -92,10 +92,10 @@ void draw(){
     fill(255, 0, 0);
     changespeed=0;
     textSize(18);
-    text("Top Player's Score: "+player1Score, 15, 290);
-    text("Bottom Player's Score: "+player2Score, 15, 330);
+    text("                     Player 1's Score: "+player1Score, 15, 290);
+    text("                     Player 2's Score: "+player2Score, 15, 330);
     textSize(36);
-    text("GAME OVER - CLICK TO PLAY AGAIN.", 15, 250);
+    text("          GAME OVER - CLICK TO PLAY AGAIN.", 15, 250);
     
     
     if (mousePressed==true){
